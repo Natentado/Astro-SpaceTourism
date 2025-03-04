@@ -9,6 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.4.1"
+    "@astrojs/preact": "^4.0.5",
+    "@fontsource/barlow": "^5.2.5",
+    "@fontsource/barlow-condensed": "^5.2.5",
+    "@fontsource/bellefair": "^5.2.5",
+    "astro": "^5.4.1",
+    "preact": "^10.26.4",
+    "sass": "^1.85.1"
   }
 }
