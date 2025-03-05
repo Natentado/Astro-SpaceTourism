@@ -2,6 +2,7 @@
     position: fixed;
     inset: 0;
     background: url("../../../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+    z-index: -1;
 
     @media (min-width: 767px){
         background: url("../../../assets/home/background-home-tablet.jpg") center/cover no-repeat;

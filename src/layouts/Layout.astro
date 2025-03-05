@@ -1,18 +1,10 @@
 ---
 import "@styles/global.scss";
 import '@fontsource/bellefair';
-// body {
-//   font-family: 'Bellefair', serif;
-// }
 import '@fontsource/barlow';
-// body {
-//   font-family: 'Barlow', sans-serif;
-// }
 import '@fontsource/barlow-condensed';
-// body {
-//   font-family: 'Barlow Condensed', sans-serif;
-// }
 import styles from "./style.module.scss";
+import Header from "@components/header/index.astro";
 ---
 
 <!doctype html>
@@ -25,6 +17,7 @@ import styles from "./style.module.scss";
 		<title>Space Tourism</title>
 	</head>
 	<body class={styles.body}>
+		<Header />
 		<slot />
 	</body>
 </html>

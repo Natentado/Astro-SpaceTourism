@@ -1,0 +1,75 @@
+.mobileHeaderBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border: unset;
+    background-color: unset;
+    color: white;
+    
+    img{
+        filter: brightness(2);
+    }
+}
+
+.sideModal{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    max-width: 254px;
+    height: 100%;
+    min-height: 100dvh;
+    padding-left: 32px;
+    border: unset;
+    background-color: unset;
+    color: white;
+    backdrop-filter: blur(80px);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out allow-discrete;
+    
+    header{
+        padding: 32px 24px 32px 0;
+    }
+}
+
+/* Open state of the dialog  */
+dialog:open {
+    opacity: 1;
+    transform: translateX(0%);
+}
+  
+/* Before open state  */
+/* Needs to be after the previous dialog:open rule to take effect,
+    as the specificity is the same */
+@starting-style {
+    dialog:open {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.mobileNavigation{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    a{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--white);
+        text-decoration: unset;
+
+        &.active{
+            border-right: 3px solid var(--white);
+        }
+    }
+}

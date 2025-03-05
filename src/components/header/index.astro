@@ -1,0 +1,15 @@
+---
+import MobileHeader from "@components/__preact/mobileHeader";
+import style from "./style.module.scss";
+import Logo from "@assets/shared/logo.svg";
+---
+
+<header class={style.header}>
+    <a href="/" data-astro-prefetch>
+        <img
+            src={Logo.src}
+            alt="Website logo that links to home page"
+        />
+    </a>
+    <MobileHeader pathname="/" client:load />
+</header>
