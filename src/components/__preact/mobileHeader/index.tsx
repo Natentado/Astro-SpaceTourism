@@ -2,12 +2,13 @@ import style from "./style.module.scss";
 import OpenMenuImg from "@assets/shared/icon-hamburger.svg";
 import CloseMenuImg from "@assets/shared/icon-close.svg";
 import { useRef } from "preact/hooks";
+import { memo } from "preact/compat";
 
 interface IMobileHeader {
     pathname: string;
 }
 
-const MobileHeader = ({pathname}: IMobileHeader) => {
+const MobileHeader = memo(({pathname}: IMobileHeader) => {
     const modalRef = useRef<HTMLDialogElement | null>(null);
 
     const handleOpenMenu = () => {
@@ -46,7 +47,7 @@ const MobileHeader = ({pathname}: IMobileHeader) => {
             </dialog>
         </>
     )
-};
+});
 
 export default MobileHeader;
 

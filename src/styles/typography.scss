@@ -1,50 +1,106 @@
 .text-preset-1{
     font-family: 'Bellefair', serif;
-    font-size: 144px;
+    font-size: 80px;
     line-height: 171.9%;
 }
 
 .text-preset-2{
     font-family: 'Bellefair', serif;
-    font-size: 100px;
+    font-size: 56px;
     line-height: 114.6%;
 }
 
 .text-preset-3{
     font-family: 'Bellefair', serif;
-    font-size: 56px;
+    font-size: 24px;
 }
 
 .text-preset-4{
     font-family: 'Bellefair', serif;
-    font-size: 32px;
+    font-size: 18px;
 }
 
 .text-preset-5{
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 16px;
     letter-spacing: 4px;
 }
 
 .text-preset-6{
     font-family: 'Bellefair', serif;
-    font-size: 28px;
+    font-size: 14px;
 }
 
-.text-preset-7{
+.text-preset-8{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;
     letter-spacing: 2px;
 }
 
-.text-preset-8{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-
 .text-preset-9{
     font-family: 'Barlow', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 180%;
+}
+
+// TABLET TYPOGRAPHY ----------------------------------------------------------------
+@media (min-width: 767px){
+    .text-preset-1{
+        font-size: 144px;
+    }
+
+    .text-preset-2{
+        font-size: 80px;
+    }
+
+    .text-preset-3{
+        font-size: 40px;
+    }
+
+    .text-preset-4{
+        font-size: 24px;
+    }
+
+    .text-preset-5{
+        font-size: 20px;
+    }
+
+    .text-preset-9{
+        font-size: 16px;
+    }
+}
+
+// DESKTOP TYPOGRAPHY ----------------------------------------------------------------
+@media (min-width: 1024px){
+    .text-preset-2{
+        font-size: 96px;
+    }
+
+    .text-preset-3{
+        font-size: 56px;
+    }
+
+    .text-preset-4{
+        font-size: 32px;
+    }
+
+    .text-preset-5{
+        font-size: 28px;
+    }
+
+    .text-preset-6{
+        font-size: 28px;
+    }
+
+    .text-preset-7{
+        font-size: 14px;
+    }
+
+    .text-preset-8{
+        font-size: 16px;
+    }
+
+    .text-preset-9{
+        font-size: 18px;
+    }
 }

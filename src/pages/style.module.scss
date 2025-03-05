@@ -1,0 +1,19 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+
+    .content{
+        text-align: center;
+
+        p{
+            color: var(--blue-300);
+        }
+
+        h1{
+            color: var(--white);
+            font-weight: 400;
+        }
+    }
+}
