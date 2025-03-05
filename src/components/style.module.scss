@@ -1,0 +1,11 @@
+.exploreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--blue-900);
+    text-decoration: unset;
+}

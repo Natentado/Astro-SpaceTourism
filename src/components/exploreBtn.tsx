@@ -1,7 +1,9 @@
+import style from "./style.module.scss";
+
 const ExploreButton = () => {
 
     return (
-        <a href="/">
+        <a class={`text-preset-4 ${style.exploreBtn}`} href="/">
             EXPLORE
         </a>
     )
