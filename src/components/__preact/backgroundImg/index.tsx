@@ -1,11 +1,15 @@
 import styles from "./style.module.scss";
 
-interface IBackgroundIMG {};
+interface IBackgroundIMG {
+    variant: "home" | "destination" | "crew" | "technology";
+};
 
-const BackgroundIMG = () => {
+const BackgroundIMG = ({variant}: IBackgroundIMG) => {
 
     return (
-        <div className={styles.bgImgContainer} />
+        <div 
+            className={`${styles.bgImgContainer} ${styles[variant]}`}
+        />
     )
 };
 
