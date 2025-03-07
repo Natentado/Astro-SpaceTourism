@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BackgroundIMG from '@components/__preact/backgroundImg';
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 
 const data = await getCollection("data");
 const destinations = data.find(item => item.id === "destinations")?.data;
@@ -10,4 +10,7 @@ console.log("destinations ===>>>", destinations)
 
 <Layout>
 	<BackgroundIMG variant="destination" />
+	<article>
+		
+	</article>
 </Layout>
