@@ -1,7 +1,9 @@
 ---
+import styles from "./style.module.scss";
 import { getCollection } from 'astro:content';
 import BackgroundIMG from '@components/__preact/backgroundImg';
 import Layout from '../../layouts/Layout.astro';
+import DestinationsGallery from "@components/__preact/destinations";
 
 const data = await getCollection("data");
 const destinations = data.find(item => item.id === "destinations")?.data;
@@ -10,7 +12,12 @@ console.log("destinations ===>>>", destinations)
 
 <Layout>
 	<BackgroundIMG variant="destination" />
-	<article>
-		
+	<article class={styles.destinationContainer}>
+		<h1 class="text-preset-6">
+			<b>01</b>
+			PICK YOUR DESTINATION
+		</h1>
+
+		<DestinationsGallery data={destinations} />
 	</article>
 </Layout>

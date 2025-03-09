@@ -19,6 +19,12 @@ const MobileHeader = memo(({pathname}: IMobileHeader) => {
         modalRef?.current?.close();
     };
 
+    const handleClickOutside = (event: React.MouseEvent<HTMLDialogElement>) => {
+        if (event.target === modalRef.current) {
+            handleCloseMenu();
+        }
+    };
+
     return (
         <>
             <button 
@@ -30,7 +36,7 @@ const MobileHeader = memo(({pathname}: IMobileHeader) => {
                     alt="Open side menu"
                 />
             </button>
-            <dialog class={style.sideModal} ref={modalRef}>
+            <dialog class={style.sideModal} ref={modalRef} onClick={handleClickOutside}>
                 <header>
                     <button 
                         class={style.mobileHeaderBtn}

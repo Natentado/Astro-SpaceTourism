@@ -1,0 +1,23 @@
+.destinationsGallery{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+ 
+    .destinationInfos{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .destinationContent{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .quantitativeInfos{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
