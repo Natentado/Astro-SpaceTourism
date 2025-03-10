@@ -2,6 +2,18 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    .destinationImgContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 26px;
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
  
     .destinationInfos{
         display: flex;

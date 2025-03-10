@@ -4,10 +4,10 @@ const DestinationsTab = () => {
     
     return (
         <ul class={style.destinationsTab}>
-            <li>MOON</li>
-            <li>MARS</li>
-            <li>EUROPA</li>
-            <li>TITAN</li>
+            <li class={"text-preset-8"}>MOON</li>
+            <li class={"text-preset-8"}>MARS</li>
+            <li class={"text-preset-8"}>EUROPA</li>
+            <li class={"text-preset-8"}>TITAN</li>
         </ul>
     )
 };

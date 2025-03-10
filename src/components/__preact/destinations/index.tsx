@@ -25,10 +25,12 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
 
     return (
         <section class={style.destinationsGallery}>
-            <img 
-                src={destinationImgUrl}
-                alt={destination}
-            />
+            <picture class={style.destinationImgContainer}>
+                <img 
+                    src={destinationImgUrl}
+                    alt={destination}
+                />
+            </picture>
 
             <div class={style.destinationInfos}>
                 <DestinationsTab />
