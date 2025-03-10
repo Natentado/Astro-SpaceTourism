@@ -7,7 +7,6 @@ import DestinationsGallery from "@components/__preact/destinations";
 
 const data = await getCollection("data");
 const destinations = data.find(item => item.id === "destinations")?.data;
-console.log("destinations ===>>>", destinations)
 ---
 
 <Layout>
@@ -18,6 +17,6 @@ console.log("destinations ===>>>", destinations)
 			PICK YOUR DESTINATION
 		</h1>
 
-		<DestinationsGallery data={destinations} />
+		<DestinationsGallery data={destinations} client:load />
 	</article>
 </Layout>

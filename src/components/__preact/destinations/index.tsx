@@ -33,24 +33,32 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
             </picture>
 
             <div class={style.destinationInfos}>
-                <DestinationsTab />
+                <DestinationsTab destination={destination} setDestination={setDestination} />
 
                 <div class={style.destinationContent}>
-                    <h2>{destinationItem?.name}</h2>
-                    <p>{destinationItem?.description}</p>
+                    <h2 class="text-preset-2">
+                        {destinationItem?.name.toUpperCase()}
+                    </h2>
+                    <p class="text-preset-9">
+                        {destinationItem?.description}
+                    </p>
                 </div>
 
                 <hr />
 
                 <div class={style.quantitativeInfos}>
-                    <span>
+                    <span class="text-preset-7">
                         AVG. DISTANCE
-                        <p>{destinationItem?.distance}</p>
+                        <p class="text-preset-6">
+                            {destinationItem?.distance.toUpperCase()}
+                        </p>
                     </span>
 
-                    <span>
-                        Est. travel time
-                        <p>{destinationItem?.travel}</p>
+                    <span class="text-preset-7">
+                        EST. TRAVEL TIME
+                        <p class="text-preset-6">
+                            {destinationItem?.travel.toUpperCase()}
+                        </p>
                     </span>
                 </div>
             </div>
