@@ -21,11 +21,12 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
     const [ destination, setDestination ] = useState("Moon");
 
     const destinationItem = data.find(item => item.name === destination);
+    const destinationImgUrl = `/${destinationItem?.images.webp.replace("./assets/", "")}`;
 
     return (
         <section class={style.destinationsGallery}>
             <img 
-                src={destinationItem?.images.webp}
+                src={destinationImgUrl}
                 alt={destination}
             />
 
