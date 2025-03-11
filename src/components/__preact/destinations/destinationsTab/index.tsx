@@ -1,8 +1,9 @@
-import type { Dispatch, SetStateAction } from "preact/compat";
 import style from "./style.module.scss";
+import type { Dispatch, SetStateAction } from "preact/compat";
 
 const DestinationsTab = ({destination, setDestination}: {destination: string, setDestination: Dispatch<SetStateAction<string>>}) => {
     
+    // Could be refactored for large/dynamic data
     return (
         <ul class={style.destinationsTab}>
             <li 

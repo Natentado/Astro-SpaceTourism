@@ -1,0 +1,27 @@
+.technologyTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    li{
+        &::marker{
+            content: "";
+        }
+
+        button{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ffffff25;
+            border-radius: 50%;
+            background-color: unset;
+            color: var(--white);
+        }
+
+        &.active button{
+            border: 1px solid transparent;
+            background-color: var(--white);
+            color: var(--blue-900);
+        }
+    } 
+}

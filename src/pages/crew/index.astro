@@ -1,0 +1,24 @@
+---
+import styles from "./style.module.scss";
+import Layout from "@layouts/Layout.astro";
+import BackgroundIMG from '@components/__preact/backgroundImg';
+import { getCollection } from "astro:content";
+import CrewPresentation from "@components/__preact/crew";
+
+const data = await getCollection("data");
+const crew = data.find(item => item.id === "crew")?.data;
+---
+
+<Layout>
+	<BackgroundIMG variant="crew" />
+	<article class={styles.crewContainer}>
+		<h1 class="text-preset-6">
+			<b>02</b>
+			MEET YOUR CREW
+		</h1>
+
+		<section class={styles.crewContent}>
+			<CrewPresentation data={crew} client:load />
+		</section>
+	</article>
+</Layout>

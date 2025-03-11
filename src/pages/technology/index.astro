@@ -1,0 +1,24 @@
+---
+import styles from "./style.module.scss";
+import { getCollection } from 'astro:content';
+import BackgroundIMG from '@components/__preact/backgroundImg';
+import Layout from '@layouts/Layout.astro';
+import TechnologySlides from "@components/__preact/technology";
+
+const data = await getCollection("data");
+const technologies = data.find(item => item.id === "technology")?.data;
+---
+
+<Layout>
+	<BackgroundIMG variant="technology" />
+	<article class={styles.technologyContainer}>
+		<h1 class="text-preset-6">
+			<b>03</b>
+			SPACE LAUNCH 101
+		</h1>
+
+		<section>
+			<TechnologySlides data={technologies} client:load />
+		</section>
+	</article>
+</Layout>

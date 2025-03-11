@@ -24,3 +24,28 @@
         background: url("../../../assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
     }
 }
+
+.crew{
+    background: url("../../../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
+
+    @media (min-width: 767px){
+        background: url("../../../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+    }
+
+    @media (min-width: 1024px){
+        background: url("../../../assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
+    }
+}
+
+.technology{
+    background: url("../../../assets/technology/background-technology-mobile.jpg") center/cover no-repeat;
+    transform: scaleX(-1);
+
+    @media (min-width: 767px){
+        background: url("../../../assets/technology/background-technology-tablet.jpg") center/cover no-repeat;
+    }
+
+    @media (min-width: 1024px){
+        background: url("../../../assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
+    }
+}

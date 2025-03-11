@@ -29,6 +29,7 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
                 <img 
                     src={destinationImgUrl}
                     alt={destination}
+                    fetchPriority="high"
                 />
             </picture>
 

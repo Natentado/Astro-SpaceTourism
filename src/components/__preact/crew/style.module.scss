@@ -1,0 +1,42 @@
+.crewInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        p:first-child{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--white);
+            text-align: center;
+
+            > span{
+                opacity: 0.5;
+            }
+        }
+
+        p:last-child{
+            height: 164px;
+            color: var(--blue-300);
+            text-align: center;
+        }
+    }
+}
+
+.crewImgContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    img{
+        height: 350px;
+        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    }
+}
