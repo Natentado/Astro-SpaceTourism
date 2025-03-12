@@ -13,6 +13,37 @@ const { pathname } = Astro.props;
             alt="Website logo that links to home page"
         />
     </a>
+
+    <nav class={style.navigation}>
+        <a 
+            href="/" 
+            class={`text-preset-8 ${pathname === "/" ? style.active : ""}`}
+        >
+            <b>00</b>
+            HOME
+        </a>
+        <a 
+            href="/destination/" 
+            class={`text-preset-8 ${pathname === "/destination/" ? style.active : ""}`}
+        >
+            <b>01</b>
+            DESTINATION
+        </a>
+        <a 
+            href="/crew/" 
+            class={`text-preset-8 ${pathname === "/crew/" ? style.active : ""}`}
+        >
+            <b>02</b>
+            CREW
+        </a>
+        <a 
+            href="/technology/" 
+            class={`text-preset-8 ${pathname === "/technology/" ? style.active : ""}`}
+        >
+            <b>03</b>
+            TECHNOLOGY
+        </a>
+    </nav>
     <MobileHeader 
         pathname={pathname} 
         client:load 
