@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import style from "./styule.module.scss";
+import style from "./style.module.scss";
 import TechnologyTab from "./destinationsTab";
 
 type TechnologyObj ={
@@ -23,8 +23,7 @@ const TechnologySlides = ({data}: ITechnologyGallery) => {
 
     return (
         <div className={style.technologySlides}>
-
-            <picture>
+            <picture key={technology}>
                 <source
                     media="(min-width: 1024px)"
                     srcset={technologyImgUrl}
@@ -34,6 +33,7 @@ const TechnologySlides = ({data}: ITechnologyGallery) => {
                     alt="Technology"
                     loading="eager"
                     fetchpriority="high"
+                    class="fade"
                 />
             </picture>
 
@@ -44,13 +44,17 @@ const TechnologySlides = ({data}: ITechnologyGallery) => {
                 />
 
                 <div>
-                    <p class="text-preset-3">
+                    <div>
                         <span class="text-preset-4">
                             THE TERMINOLOGY…
                         </span>
-                        {technologyItem?.name.toUpperCase()}
+                        <p key={technology} class="text-preset-3 fade">
+                            {technologyItem?.name.toUpperCase()}
+                        </p>
+                    </div>
+                    <p key={technology} class="text-preset-9 fade">
+                        {technologyItem?.description}
                     </p>
-                    <p class="text-preset-9">{technologyItem?.description}</p>
                 </div>
             </div>
 		</div>

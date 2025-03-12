@@ -27,19 +27,24 @@
             flex-direction: column;
             gap: 16px;
 
-            p:first-child{
+            > div{
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                color: var(--white);
-                text-align: center;
 
+                p{
+                    color: var(--white);
+                    text-align: center;
+                    
+                }
                 span{
                     opacity: 0.542;
+                    color: var(--white);
+                    text-align: center;
                 }
             }
 
-            p:last-child{
+            > p{
                 height: 162px;
                 color: var(--blue-300);
                 text-align: center;

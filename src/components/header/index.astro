@@ -2,6 +2,8 @@
 import MobileHeader from "@components/__preact/mobileHeader";
 import style from "./style.module.scss";
 import Logo from "@assets/shared/logo.svg";
+
+const { pathname } = Astro.props;
 ---
 
 <header class={style.header}>
@@ -11,5 +13,8 @@ import Logo from "@assets/shared/logo.svg";
             alt="Website logo that links to home page"
         />
     </a>
-    <MobileHeader pathname="/" client:load />
+    <MobileHeader 
+        pathname={pathname} 
+        client:load 
+    />
 </header>

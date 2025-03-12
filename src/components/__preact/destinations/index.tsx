@@ -25,7 +25,7 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
 
     return (
         <section class={style.destinationsGallery}>
-            <picture class={style.destinationImgContainer}>
+            <picture key={destination} class={`fade ${style.destinationImgContainer}`}>
                 <img 
                     src={destinationImgUrl}
                     alt={destination}
@@ -37,10 +37,10 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
                 <DestinationsTab destination={destination} setDestination={setDestination} />
 
                 <div class={style.destinationContent}>
-                    <h2 class="text-preset-2">
+                    <h2 key={destination} class="text-preset-2 fade">
                         {destinationItem?.name.toUpperCase()}
                     </h2>
-                    <p class="text-preset-9">
+                    <p key={destination} class="text-preset-9 fade">
                         {destinationItem?.description}
                     </p>
                 </div>
@@ -50,14 +50,14 @@ const DestinationsGallery = ({data}: IDestinationsGallery) => {
                 <div class={style.quantitativeInfos}>
                     <span class="text-preset-7">
                         AVG. DISTANCE
-                        <p class="text-preset-6">
+                        <p key={destination} class="text-preset-6 fade">
                             {destinationItem?.distance.toUpperCase()}
                         </p>
                     </span>
 
                     <span class="text-preset-7">
                         EST. TRAVEL TIME
-                        <p class="text-preset-6">
+                        <p key={destination} class="text-preset-6 fade">
                             {destinationItem?.travel.toUpperCase()}
                         </p>
                     </span>
