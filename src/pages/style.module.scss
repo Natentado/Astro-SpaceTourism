@@ -17,6 +17,10 @@
             font-weight: 400;
         }
     }
+
+    @media (min-width: 767px) {
+        padding: 128px 40px;
+    }
 }
 
 .exploreCTA{
