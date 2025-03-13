@@ -20,4 +20,17 @@
             opacity: 0.25;
         }
     }
+
+    @media (min-width: 767px) {
+        padding: 40px;
+        
+        h1{
+            justify-content: flex-start;
+            font-size: 20px;
+
+            b{
+                font-size: 20px;
+            }
+        }
+    }
 }

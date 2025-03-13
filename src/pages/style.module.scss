@@ -2,6 +2,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
     padding: 24px;
 
@@ -19,7 +20,23 @@
     }
 
     @media (min-width: 767px) {
+        gap: 66px;
         padding: 128px 40px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 512px;
+
+            p:first-child{
+                font-size: 28px;
+            }
+
+            h1{
+                line-height: unset;
+            }
+        }
     }
 }
 

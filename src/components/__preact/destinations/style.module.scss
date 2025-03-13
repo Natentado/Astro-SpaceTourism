@@ -62,4 +62,34 @@
             }
         }
     }
+
+    @media (min-width: 767px) {
+        max-width: 514px;
+        margin: 0 auto;
+
+        .destinationImgContainer{
+            padding: 42px;
+
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .destinationInfos{
+            .destinationContent{
+                p{
+                    height: auto;
+                }
+            }
+
+            .quantitativeInfos{
+                flex-direction: row;
+
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

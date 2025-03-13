@@ -17,6 +17,9 @@ const destinations = data.find(item => item.id === "destinations")?.data;
 			PICK YOUR DESTINATION
 		</h1>
 
-		<DestinationsGallery data={destinations} client:load />
+		<DestinationsGallery
+			data={destinations}
+			client:load
+		/>
 	</article>
 </Layout>
