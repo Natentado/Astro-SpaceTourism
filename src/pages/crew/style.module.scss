@@ -27,4 +27,18 @@
         flex-direction: column;
         gap: 32px;
     }
+
+    @media (min-width: 767px){
+        padding: 40px;
+        padding-bottom: 0;
+
+        h1{
+            justify-content: start;
+            font-size: 20px;
+            
+            b{
+                font-size: 20px;
+            }
+        }
+    }
 }

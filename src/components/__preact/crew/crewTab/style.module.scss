@@ -8,14 +8,14 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        color: var(--white);
+        background-color: var(--white);
         opacity: 17.44%;
 
         &.active{
             opacity: 1;
         }
 
-        ::marker{
+        &::marker{
             content: "";
         }
     }
