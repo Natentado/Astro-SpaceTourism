@@ -51,4 +51,15 @@
             }
         }
     }
+
+    @media (min-width: 767px){
+        picture img{
+            height: 357px;
+        }
+
+        > div{
+            width: 512px;
+            margin: 0 auto;
+        }
+    }
 }

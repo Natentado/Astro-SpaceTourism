@@ -23,5 +23,12 @@
             background-color: var(--white);
             color: var(--blue-900);
         }
-    } 
+    }
+
+    @media (min-width: 767px){
+        li button{
+            width: 56px;
+            height: 56px;
+        }
+    }
 }
