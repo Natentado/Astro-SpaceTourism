@@ -18,7 +18,10 @@ const technologies = data.find(item => item.id === "technology")?.data;
 		</h1>
 
 		<section>
-			<TechnologySlides data={technologies} client:load />
+			<TechnologySlides 
+				data={technologies} 
+				client:load 
+			/>
 		</section>
 	</article>
 </Layout>

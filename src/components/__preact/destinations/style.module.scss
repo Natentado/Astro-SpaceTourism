@@ -92,4 +92,43 @@
             }
         }
     }
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+        max-width: unset;
+        height: 734px;
+
+        .destinationImgContainer{
+            padding: 0 30px;
+
+            img{
+                width: 480px;
+                height: 480px;
+            }
+        }
+
+        .destinationInfos{
+            align-items: flex-start;
+            gap: 40px;
+            padding: 0 48px;
+
+            .destinationContent{
+                text-align: start;
+            }
+
+            hr{
+                width: 100%;
+            }
+
+            .quantitativeInfos{
+                width: 100%;
+                gap: unset;
+
+                > span{
+                    align-items: start;
+                }
+            }
+        }
+    }
 }

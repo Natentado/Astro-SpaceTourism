@@ -33,4 +33,15 @@
             }
         }
     }
+
+    @media (min-width: 1024px){
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 48px 0;
+
+        h1 b{
+            font-size: 28px;
+        }
+    }
 }

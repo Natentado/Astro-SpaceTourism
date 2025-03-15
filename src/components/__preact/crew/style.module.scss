@@ -40,6 +40,30 @@
             height: 117px;
         }
     }
+
+    @media (min-width: 1024px){
+        max-width: 539px;
+        height: 100%;
+        gap: 40px;
+        justify-content: flex-end;
+
+        > div{
+            height: 100%;
+            justify-content: center;
+
+            > div{
+                gap: 16px;
+
+                > p, > span{
+                    text-align: start;
+                }
+            }
+
+            > p{
+                text-align: start;
+            }
+        }
+    }
 }
 
 .crewImgContainer{
@@ -56,6 +80,17 @@
     @media (min-width: 767px){
         img{
             height: 560px;
+        }
+    }
+
+    @media (min-width: 1024px){
+        height: 100%;
+        width: 539px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
     }
 }

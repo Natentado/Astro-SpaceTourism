@@ -31,4 +31,22 @@
             height: 56px;
         }
     }
+
+    @media (min-width: 1024px){
+        flex-direction: column;
+        gap: 32px;
+
+        li{
+            &:not(.active) button:hover{
+                border: 1px solid var(--white);
+                color: var(--white);
+            }
+
+            button{
+                cursor: pointer;
+                width: 80px;
+                height: 80px;
+            }
+        } 
+    }
 }

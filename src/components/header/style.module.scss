@@ -19,6 +19,10 @@ header{
         display: none;
     }
 
+    .navigationBar{
+        display: none;
+    }
+
     @media (min-width: 767px) {
         height: 96px;
         padding: unset;
@@ -48,6 +52,7 @@ header{
                 align-items: center;
                 gap: 8px;
                 height: 100%;
+                border-bottom: 3px solid transparent;
                 color: var(--white);
                 font-size: 16px;
                 text-decoration: unset;
@@ -55,6 +60,38 @@ header{
                 &.active{
                     border-bottom: 3px solid var(--white);
                 }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 40px;
+
+        .navigation{
+            min-width: 736px;
+            padding-right: 64px;
+            
+            > a{
+                transition: all 0.6s ease;
+
+                &:hover{
+                    border-bottom: 3px solid var(--white);
+                    transition: all 0.6s ease;
+                }
+            }
+        }
+
+        .navigationBar{
+            position: relative;
+            display: block;
+            width: 100%;
+
+            hr{
+                position: absolute;
+                width: calc(100% + 36px);
+                border-top: 1px solid var(--white);
+                opacity: 0.25;
+                z-index: 9;
             }
         }
     }

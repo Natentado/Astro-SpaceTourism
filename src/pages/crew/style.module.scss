@@ -41,4 +41,17 @@
             }
         }
     }
+
+    @media (min-width: 1024px){
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 48px 0;
+
+        .crewContent{
+            flex-direction: row;
+            align-items: center;
+            height: 734px;
+        }
+    }
 }
