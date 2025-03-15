@@ -27,21 +27,21 @@ const CrewPresentation = ({data}: ICrewPresentation) => {
             <div class={style.crewInfos}>
                 <div>
                     <div>
-                        <span key={selectedCrew} class="text-preset-4 fade">
+                        <span key={`${selectedCrew}-role`} class="text-preset-4 fade">
                             {crewItem?.role.toUpperCase()}
                         </span>
-                        <p key={selectedCrew} class="text-preset-3 fade">
+                        <p key={`${selectedCrew}-name`} class="text-preset-3 fade">
                             {crewItem?.name.toUpperCase()}
                         </p>
                     </div>
 
-                    <p key={selectedCrew} class="text-preset-9 fade">
+                    <p key={`${selectedCrew}-bio`} class="text-preset-9 fade">
                         {crewItem?.bio}
                     </p>
                 </div>
                 <CrewTab crew={selectedCrew} setCrew={setSelectedCrew} />
             </div>
-            <picture key={selectedCrew} class={`${style.crewImgContainer} fade`}>
+            <picture key={`${selectedCrew}-img`} class={`${style.crewImgContainer} fade`}>
                 <img 
                     src={crewImgUrl}
                     alt={`Image of crew integrant: ${selectedCrew}`}

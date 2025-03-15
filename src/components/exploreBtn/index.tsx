@@ -3,7 +3,7 @@ import style from "./style.module.scss";
 const ExploreButton = () => {
 
     return (
-        <a class={style.exploreBtn} href="/destination">
+        <a class={style.exploreBtn} href="/destination/">
             <button class="text-preset-4 ">
                 EXPLORE
             </button>

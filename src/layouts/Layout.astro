@@ -5,6 +5,7 @@ import '@fontsource/barlow';
 import '@fontsource/barlow-condensed';
 import styles from "./style.module.scss";
 import Header from "@components/header/index.astro";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -14,10 +15,12 @@ import Header from "@components/header/index.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Space Tourism Experience">
 		<title>Space Tourism</title>
 	</head>
 	<body class={styles.body}>
-		<Header pathname={Astro.url.pathname} />
+		<Header pathname={Astro.url.pathname} transition:persist />
+		<ClientRouter />
 		<slot />
 	</body>
 </html>

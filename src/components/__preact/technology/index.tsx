@@ -23,7 +23,7 @@ const TechnologySlides = ({data}: ITechnologyGallery) => {
 
     return (
         <div className={style.technologySlides}>
-            <picture key={technology}>
+            <picture key={`${technology}-img`}>
                 <source
                     media="(min-width: 1024px)"
                     srcset={technologyImgUrl}
@@ -48,11 +48,11 @@ const TechnologySlides = ({data}: ITechnologyGallery) => {
                         <span class="text-preset-4">
                             THE TERMINOLOGY…
                         </span>
-                        <p key={technology} class="text-preset-3 fade">
+                        <p key={`${technology}-name`} class="text-preset-3 fade">
                             {technologyItem?.name.toUpperCase()}
                         </p>
                     </div>
-                    <p key={technology} class="text-preset-9 fade">
+                    <p key={`${technology}-description`} class="text-preset-9 fade">
                         {technologyItem?.description}
                     </p>
                 </div>
